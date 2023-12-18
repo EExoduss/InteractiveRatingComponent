@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Russo+One&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="firstPage" class="card1">
+            <div class="star-wrapper">
+                <img class="star" alt="star" src="images/icon-star.svg">
+            </div>
+            <h1 class="title">How did we do?</h1>
+            <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!</p>
+
+            <div class="form">
+                <button id="one" class="btn btn-one circle">1</button>
+                <button id="two" class="btn btn-two circle">2</button>
+                <button id="three" class="btn btn-three circle">3</button>
+                <button id="four" class="btn btn-four circle">4</button>
+                <button id="five" class="btn btn-five circle">5</button>
+                
+                <button id="send" class="btn btn-send">SUBMIT</button>
+            </div>
+
+            <p class="error none" id="error-message">Select your vote before submit!</p>
+        </div>
+
+        <div id="secondPage" class="card2 none">
+            <img class="thank-img" src="images/illustration-thank-you.svg" alt="Illustration thank you">
+            <p id="score" class="result">You selected 4 out of 5</p>
+            <h1 class="thanks">Thank you!</h1>
+            <p class="thank-message">We appreciate you taking the time to give a rating. 
+                If you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+
+
+body{
+
+    background-color: var(--VeryDarkBlue);
+
+    display: flex;
+    place-content: center;
+
+    min-height: 100vh;
+
+
+}
+
+main{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+.card1{
+    background: linear-gradient(hsl(210, 19%, 14%), hsl(212, 25%, 10%));
+    border: 1px solid black;
+
+    border-radius: 1.5rem;
+
+    padding: 2rem 2rem 2rem 2rem;
+
+    max-width: 25.7rem;
+    max-height: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+   
+}
+
+.star{
+    object-fit: none;
+    border-radius: 100%;
+}
+
+.star-wrapper{
+    background-color: var(--DarkBlue);
+
+    border-radius: 10rem;
+    
+    min-width: 2rem;
+    min-height: 2rem;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    place-content: center;
+
+    margin-bottom: 1.5rem;
+    
+    
+}
+
+
+.title{
+    color: var(--White);
+}
+
+.text{
+    color: var(--LightGrey);
+
+    margin-top: 1rem;
+
+    display: flex;
+
+}
+
+.form{
+
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "uno due tre quattro cinque" "invia invia invia invia invia";
+    
+    gap: 1rem;
+
+
+}
+
+.btn{
+    background-color: hsl(213, 19%, 18%);
+
+    color: var(--White);
+
+    min-width: 3rem;
+    min-height: 3rem;
+
+    font-size: 1rem;
+
+    
+}
+
+.circle{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.btn-one{
+    grid-area: uno;
+}
+
+.btn-two{
+    grid-area: due;
+}
+
+.btn-three{
+    grid-area: tre;
+}
+.btn-four{
+    grid-area: quattro;
+}
+.btn-five{
+    grid-area: cinque;
+}
+
+.btn-send{
+    grid-area: invia;
+
+    background-color: var(--Orange);
+    letter-spacing: 0.08rem;
+    border-radius: 2rem;
+}
+
+.error{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+
+    border: 1px solid red;
+    width: 100%;
+}
+
+
+
+
+/*Card 2*/
+
+.card2{
+    background: linear-gradient(hsl(210, 19%, 14%), hsl(212, 25%, 10%));
+    border: 1px solid black;
+
+    border-radius: 1.5rem;
+
+    padding: 2rem 2rem 2rem 2rem;
+
+    max-width: 25.7rem;
+    max-height: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.thank-img{
+    margin-bottom: 2rem;
+}
+
+.result{
+    background-color: var(--DarkBlue);
+    color:hsl(25, 97%, 53%);
+
+    border-radius: 2rem;
+
+    min-height: 2rem;
+    min-width: 12rem;
+
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.thanks{
+    color: white;
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.thank-message{
+    color: var(--LightGrey);
+
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
